@@ -1,10 +1,10 @@
-# 🚀 Khaled Tofailieh - Professional Portfolio
+# 🚀 KHaled Tofailieh - Professional Portfolio
 
-> A modern, fully-responsive portfolio showcasing AI/ML engineering expertise and full-stack development skills with a cyberpunk aesthetic.
+> A modern, fully-responsive portfolio showcasing AI & Backend Engineering expertise and production-ready intelligent systems with a cyberpunk aesthetic.
 
 ## ✨ Overview
 
-This portfolio represents a comprehensive showcase of professional experience, technical skills, and innovative projects in AI/ML engineering and full-stack development. Built with modern web technologies and featuring a unique cyberpunk design aesthetic.
+This portfolio represents a comprehensive showcase of professional experience, technical skills, and innovative projects in AI & Backend Engineering. Built with modern web technologies and featuring a unique cyberpunk design aesthetic.
 
 ## 🎯 Key Features
 
@@ -93,8 +93,8 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd phantom-design-hub
+   git clone https://github.com/KhaledTofailieh/Portfolio.git
+   cd Portfolio
    ```
 
 2. **Install dependencies**

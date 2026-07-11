@@ -1,6 +1,6 @@
 {
   "personal": {
-    "name": "Khaled Tofailieh",
+    "name": "KHaled Tofailieh",
     "nickname": "To",
     "title": "AI & Backend Engineer",
     "company": "Lowe's Companies, Inc.",
@@ -1250,19 +1250,23 @@
     }
   ],
   "seo": {
-    "title": "Khaled Tofailieh - AI & Backend Engineer",
+    "title": "KHaled Tofailieh - AI & Backend Engineer",
     "description": "AI & Backend Engineer specializing in end-to-end product architecture, system services, complex multi-agent systems, and retrieval/RAG applications.",
     "keywords": [
-      "Khaled Tofailieh",
+      "KHaled Tofailieh",
       "AI Engineer",
       "Backend Engineer",
-      "System Services",
       "Multi-Agent Systems",
       "RAG",
       "Retrieval Augmented Generation",
       "Python",
-      "React",
-      "Next.js",
+      "FastAPI",
+      "LangChain",
+      "LangGraph",
+      "Qdrant",
+      "Vector Databases",
+      "Clean Architecture",
+      "Domain-Driven Design",
       "Syria",
       "Damascus"
     ],
