@@ -2,13 +2,13 @@
   "personal": {
     "name": "KHaled Tofailieh",
     "nickname": "To",
-    "title": "AI & Backend Engineer",
+    "title": "Senior AI & Backend Engineer",
     "company": "Lowe's Companies, Inc.",
     "location": "Syria, Damascus",
     "email": "khaled.tofailieh@gmail.com",
     "phone": "+963967478585",
-    "tagline": "AI & Backend Engineer",
-    "bio": "I am an AI & Backend Engineer dedicated to building intelligent, production-ready systems. By combining Clean Architecture & DDD with state-of-the-art AI orchestration—such as stateful multi-agent systems and hybrid retrieval (RAG) pipelines—I turn complex ideas into robust, scalable software services.",
+    "tagline": "Senior AI & Backend Engineer",
+    "bio": "I am a Senior AI & Backend Engineer dedicated to building intelligent, production-ready systems. By combining Clean Architecture & DDD with state-of-the-art AI orchestration—such as stateful multi-agent systems and hybrid retrieval (RAG) pipelines—I turn complex ideas into robust, scalable software services.",
     "closingBio": "Ready to build the future of intelligent systems? I am always excited to collaborate on cutting-edge AI architectures, scale high-performance backends, or exchange ideas on the latest engineering patterns. Let's connect and build something extraordinary.",
     "story": [
       "I work at the intersection of **AI Engineering** and **Backend Architecture**, creating systems that are both *smart* and *scalable*. My background started with data engineering and machine learning models, which naturally led me to building **production-grade AI systems**. Over the years, I have designed and deployed complete platforms from scratch—like **Subul's Talent Engine**—taking them from initial ideas to actual production serving thousands of active users.",
@@ -37,7 +37,7 @@
     },
     "email": "mailto:khaled.tofailieh@gmail.com",
     "phone": "tel:+963967478585",
-    "resume": "https://drive.google.com/file/d/1rmdnshV79wVHCssTCWoTJ5LOlcf0snju/view?usp=drive_link"
+    "resume": "https://drive.google.com/file/d/1D4O3j2j6TKdWUzjO1NP87Vi5rOCBQKnu/view?usp=sharing"
   },
   "principles": [
     {
@@ -1250,8 +1250,8 @@
     }
   ],
   "seo": {
-    "title": "KHaled Tofailieh - AI & Backend Engineer",
-    "description": "AI & Backend Engineer specializing in end-to-end product architecture, system services, complex multi-agent systems, and retrieval/RAG applications.",
+    "title": "KHaled Tofailieh - Senior AI & Backend Engineer",
+    "description": "Senior AI & Backend Engineer specializing in end-to-end product architecture, system services, complex multi-agent systems, and retrieval/RAG applications.",
     "keywords": [
       "KHaled Tofailieh",
       "AI Engineer",
