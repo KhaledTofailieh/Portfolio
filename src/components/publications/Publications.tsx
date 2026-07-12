@@ -3,6 +3,7 @@ import PublicationCategoryFilter from './PublicationCategoryFilter';
 import PublicationCard from './PublicationCard';
 import EmptyState from './EmptyState';
 import personalInfo from '@/data/personal-info.json';
+import CollapsibleContent from '../ui/collapsible-content';
 
 const Publications: React.FC = () => {
   return (
@@ -17,18 +18,20 @@ const Publications: React.FC = () => {
           </p>
         </div>
 
-        {/* Client-side Category Filter */}
-        <PublicationCategoryFilter publications={personalInfo.publications} />
+        <CollapsibleContent sectionId="publications">
+          {/* Client-side Category Filter */}
+          <PublicationCategoryFilter publications={personalInfo.publications} />
 
-        {/* Server-rendered Publications Content for SEO */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto" id="publications-grid">
-          {personalInfo.publications.map((publication) => (
-            <PublicationCard key={publication.title} publication={publication} />
-          ))}
-        </div>
-        
-        {/* Empty state for blog category */}
-        <EmptyState />
+          {/* Server-rendered Publications Content for SEO */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto" id="publications-grid">
+            {personalInfo.publications.map((publication) => (
+              <PublicationCard key={publication.title} publication={publication} />
+            ))}
+          </div>
+          
+          {/* Empty state for blog category */}
+          <EmptyState />
+        </CollapsibleContent>
       </div>
     </section>
   );

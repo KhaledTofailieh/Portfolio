@@ -3,6 +3,7 @@ import React from 'react';
 import Timeline from './Timeline';
 import ExperienceCard from './ExperienceCard';
 import personalInfo from '@/data/personal-info.json';
+import CollapsibleContent from '../ui/collapsible-content';
 
 interface ExperienceItem {
   id: number;
@@ -40,21 +41,23 @@ const Experience: React.FC = () => {
           </p>
         </div>
 
-        {/* Timeline */}
-        <div className="relative">
-          <Timeline />
-          
-          {/* Experience Cards - ALL CONTENT SERVER-RENDERED FOR SEO */}
-          <div className="space-y-8 lg:space-y-12">
-            {experiences.map((experience, index) => (
-              <ExperienceCard
-                key={experience.id}
-                experience={experience}
-                index={index}
-              />
-            ))}
+        <CollapsibleContent sectionId="experience">
+          {/* Timeline */}
+          <div className="relative">
+            <Timeline />
+            
+            {/* Experience Cards - ALL CONTENT SERVER-RENDERED FOR SEO */}
+            <div className="space-y-8 lg:space-y-12">
+              {experiences.map((experience, index) => (
+                <ExperienceCard
+                  key={experience.id}
+                  experience={experience}
+                  index={index}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        </CollapsibleContent>
       </div>
     </section>
   );

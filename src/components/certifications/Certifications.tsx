@@ -4,6 +4,7 @@ import CertificationCard from './CertificationCard';
 import CertificationFilter from './CertificationFilter';
 import CallToAction from './CallToAction';
 import personalInfo from '@/data/personal-info.json';
+import CollapsibleContent from '../ui/collapsible-content';
 
 interface Certificate {
   readonly url: string;
@@ -53,17 +54,19 @@ const Certifications: React.FC = () => {
           </p>
         </div>
 
-        {/* Category Filter */}
-        <CertificationFilter categories={categories} categoryCounts={categoryCounts} />
+        <CollapsibleContent sectionId="certifications">
+          {/* Category Filter */}
+          <CertificationFilter categories={categories} categoryCounts={categoryCounts} />
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
-          {certifications.map((cert, index) => (
-            <CertificationCard key={cert.id} cert={cert} index={index} />
-          ))}
-        </div>
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
+            {certifications.map((cert, index) => (
+              <CertificationCard key={cert.id} cert={cert} index={index} />
+            ))}
+          </div>
 
-        {/* Call to Action */}
-        <CallToAction />
+          {/* Call to Action */}
+          <CallToAction />
+        </CollapsibleContent>
       </div>
     </section>
   );

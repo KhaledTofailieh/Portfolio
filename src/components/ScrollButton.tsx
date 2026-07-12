@@ -16,10 +16,13 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({
   ariaLabel 
 }) => {
   const scrollToTarget = () => {
-    const element = document.querySelector(`#${targetId}`);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.dispatchEvent(new CustomEvent('open-section', { detail: { sectionId: targetId } }));
+    setTimeout(() => {
+      const element = document.querySelector(`#${targetId}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 150);
   };
 
   return (

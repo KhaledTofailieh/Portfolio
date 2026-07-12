@@ -4,6 +4,7 @@ import ProjectFilter from './ProjectFilter';
 import ProjectCard from './ProjectCard';
 import CallToAction from './CallToAction';
 import personalInfo from '@/data/personal-info.json';
+import CollapsibleContent from '../ui/collapsible-content';
 
 interface Project {
   readonly id: number;
@@ -67,18 +68,20 @@ const Projects: React.FC = () => {
           </p>
         </div>
 
-        {/* Category Filter - CLIENT COMPONENT FOR INTERACTIVITY */}
-        <ProjectFilter categories={categories} categoryCounts={categoryCounts} />
+        <CollapsibleContent sectionId="projects">
+          {/* Category Filter - CLIENT COMPONENT FOR INTERACTIVITY */}
+          <ProjectFilter categories={categories} categoryCounts={categoryCounts} />
 
-        {/* Projects Grid - ALL PROJECTS SERVER-RENDERED FOR SEO */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+          {/* Projects Grid - ALL PROJECTS SERVER-RENDERED FOR SEO */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
 
-        {/* Call to Action */}
-        <CallToAction />
+          {/* Call to Action */}
+          <CallToAction />
+        </CollapsibleContent>
       </div>
     </section>
   );

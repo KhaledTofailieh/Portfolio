@@ -3,6 +3,7 @@ import Education from './Education';
 import MyJourney from './MyJourney';
 import HowIWork from './HowIWork';
 import Stats from './Stats';
+import CollapsibleContent from '../ui/collapsible-content';
 
 const About: React.FC = () => {
   return (
@@ -17,19 +18,21 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        {/* Education Section */}
-        <Education />
+        <CollapsibleContent sectionId="about">
+          {/* Education Section */}
+          <Education />
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* My Journey Section */}
-          <MyJourney />
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* My Journey Section */}
+            <MyJourney />
 
-          {/* How I Work Section */}
-          <HowIWork />
-        </div>
+            {/* How I Work Section */}
+            <HowIWork />
+          </div>
 
-        {/* Stats Section */}
-        <Stats />
+          {/* Stats Section */}
+          <Stats />
+        </CollapsibleContent>
       </div>
     </section>
   );

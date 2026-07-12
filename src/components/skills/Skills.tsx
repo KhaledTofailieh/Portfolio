@@ -4,6 +4,7 @@ import { Code2, Brain, Server, Database, Cloud, type LucideIcon } from 'lucide-r
 import SkillCategory from './SkillCategory';
 import SkillsSummary from './SkillsSummary';
 import personalInfo from '@/data/personal-info.json';
+import CollapsibleContent from '../ui/collapsible-content';
 
 interface Skill {
   readonly name: string;
@@ -60,19 +61,21 @@ const Skills: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6">
-          {skillCategories.map((category, categoryIndex) => (
-            <SkillCategory
-              key={categoryIndex}
-              title={category.title}
-              icon={category.icon}
-              skills={category.skills}
-            />
-          ))}
-        </div>
+        <CollapsibleContent sectionId="skills">
+          <div className="flex flex-wrap justify-center gap-6">
+            {skillCategories.map((category, categoryIndex) => (
+              <SkillCategory
+                key={categoryIndex}
+                title={category.title}
+                icon={category.icon}
+                skills={category.skills}
+              />
+            ))}
+          </div>
 
-        {/* Skills Summary */}
-        <SkillsSummary />
+          {/* Skills Summary */}
+          <SkillsSummary />
+        </CollapsibleContent>
       </div>
     </section>
   );

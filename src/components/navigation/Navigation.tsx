@@ -38,10 +38,15 @@ const Navigation: React.FC = () => {
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    const sectionId = href.replace('#', '');
+    window.dispatchEvent(new CustomEvent('open-section', { detail: { sectionId } }));
+
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 150);
     setIsOpen(false);
   };
 

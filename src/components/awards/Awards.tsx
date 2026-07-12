@@ -2,6 +2,7 @@
 import React from 'react';
 import AwardCard from './AwardCard';
 import personalInfo from '@/data/personal-info.json';
+import CollapsibleContent from '../ui/collapsible-content';
 
 interface Award {
   readonly id: number;
@@ -32,11 +33,13 @@ const Awards: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {awards.map((award, index) => (
-            <AwardCard key={index} award={award} index={index} />
-          ))}
-        </div>
+        <CollapsibleContent sectionId="awards">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {awards.map((award, index) => (
+              <AwardCard key={index} award={award} index={index} />
+            ))}
+          </div>
+        </CollapsibleContent>
       </div>
     </section>
   );
