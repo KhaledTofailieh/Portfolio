@@ -1,0 +1,22 @@
+User-Agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-Agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-Agent: Twitterbot
+Allow: /
+
+User-Agent: facebookexternalhit
+Allow: /
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Sitemap: https://khaled.tofailieh.com/sitemap.xml
