@@ -3,6 +3,8 @@ import personalInfo from '@/data/personal-info.json';
 export type PersonalInfo = typeof personalInfo;
 export type PublicPersonalInfo = Omit<PersonalInfo, 'seo'>;
 
+export const dynamic = 'force-static';
+
 export async function GET(): Promise<Response> {
   const { seo, ...publicData } = personalInfo;
 
