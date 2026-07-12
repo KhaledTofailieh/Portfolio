@@ -1,1 +1,1 @@
-export const publicUrl = "https://khaledtofailieh.com"
+export const publicUrl = "https://khaled.tofailieh.com"
