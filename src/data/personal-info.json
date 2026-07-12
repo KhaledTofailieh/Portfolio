@@ -15,7 +15,7 @@
       "For me, AI is not just about using APIs. It is about building **smart, autonomous workflows** and search systems that solve real-world problems. Whether creating **hybrid semantic search engines** with *Qdrant* and *Reciprocal Rank Fusion (RRF)*, or orchestrating **multi-agent systems** with *LangGraph*, I focus on writing **clean code** and using **Domain-Driven Design (DDD)**. I enjoy finding and fixing technical bottlenecks to make sure systems are reliable and fast.",
       "Continuous learning and sharing knowledge are very important to me. When I am not working on my **MSc in Artificial Intelligence** or writing articles on *Medium*, I teach and **mentor other developers** in programs like the **'AI Innovator Pathway'**. I love experimenting with new technologies and pushing the boundaries of what intelligent software can do."
     ],
-    "profileImage": "/khaled_tofailieh.jpg"
+    "profileImage": "./khaled_tofailieh.jpg"
   },
   "stats": {
     "projects": "7+",
@@ -240,7 +240,7 @@
       "title": "AI & Backend Engineer",
       "company": "Subul",
       "location": "Netherlands (Remote)",
-      "logo": "/professional-experience-logos/subul-logo-nav.svg",
+      "logo": "./professional-experience-logos/subul-logo-nav.svg",
       "duration": "Sept 2024 – Present",
       "description": "Founding engineer of Subul's Talent Engine Platform. Led the end-to-end development from initial planning and CEO alignment to architecting, deploying, and scaling advanced AI and backend services that drive the platform's core capabilities.",
       "achievements": [
@@ -280,7 +280,7 @@
       "title": "Machine Learning Engineer",
       "company": "Accumed",
       "location": "UAE (Remote)",
-      "logo": "/professional-experience-logos/accumed-logo.jfif",
+      "logo": "./professional-experience-logos/accumed-logo.jfif",
       "duration": "Nov 2023 – Oct 2024",
       "description": "Led the development and deployment of advanced NLP and similarity search models to optimize medical claim coding accuracy, alongside architecting robust Robotic Process Automation (RPA) systems.",
       "achievements": [
@@ -308,7 +308,7 @@
       "title": "Data Engineer",
       "company": "EcoMundo",
       "location": "France (Remote)",
-      "logo": "/professional-experience-logos/ecomundo-logo.jfif",
+      "logo": "./professional-experience-logos/ecomundo-logo.jfif",
       "duration": "Jan 2022 – Oct 2023",
       "description": "Engineered and optimized robust data pipelines and complex ETL workflows, ensuring the integrity, security, and high performance of enterprise-scale data infrastructure.",
       "achievements": [
@@ -378,12 +378,12 @@
         "NLP"
       ],
       "images": [
-        "/projects-images/Subul.png",
-        "/projects-images/Subul-1.png",
-        "/projects-images/Subul-2.png",
-        "/projects-images/Subul-3.png",
-        "/projects-images/Subul-4.png",
-        "/projects-images/Subul-5.png"
+        "./projects-images/Subul.png",
+        "./projects-images/Subul-1.png",
+        "./projects-images/Subul-2.png",
+        "./projects-images/Subul-3.png",
+        "./projects-images/Subul-4.png",
+        "./projects-images/Subul-5.png"
       ],
       "status": "Production Deployed (2026)",
       "priority": 1,
@@ -416,9 +416,9 @@
         "System Architecture"
       ],
       "images": [
-        "/projects-images/SubulLP.png",
-        "/projects-images/Subul-Admin.png",
-        "/projects-images/Subul-Admin-1.png"
+        "./projects-images/SubulLP.png",
+        "./projects-images/Subul-Admin.png",
+        "./projects-images/Subul-Admin-1.png"
       ],
       "status": "Production Deployed (2026)",
       "priority": 2,
@@ -455,9 +455,9 @@
         "NLP"
       ],
       "images": [
-        "/projects-images/Talent-Search-Engine.png",
-        "/projects-images/Talent-Search-Engine-1.png",
-        "/projects-images/Talent-Search-Engine-2.png"
+        "./projects-images/Talent-Search-Engine.png",
+        "./projects-images/Talent-Search-Engine-1.png",
+        "./projects-images/Talent-Search-Engine-2.png"
       ],
       "status": "Production Deployed (2026)",
       "priority": 3,
@@ -558,10 +558,10 @@
         "Education",
         "Multi-Agent Systems"
       ],
-      "image": "/projects-images/AI-Innovator-Pathway.png",
+      "image": "./projects-images/AI-Innovator-Pathway.png",
       "images": [
-        "/projects-images/AI-Innovator-Pathway.png",
-        "/projects-images/AI-Innovator-Pathway-1.png"
+        "./projects-images/AI-Innovator-Pathway.png",
+        "./projects-images/AI-Innovator-Pathway-1.png"
       ],
       "status": "Delivered & Mentored (2026)",
       "priority": 4,
@@ -1270,11 +1270,11 @@
       "Syria",
       "Damascus"
     ],
-    "ogImage": "/khaled_tofailieh.jpg",
+    "ogImage": "./khaled_tofailieh.jpg",
     "googleSiteVerification": "oNrOrBYC8Dz7PNuaUMPlYXCVWaPbmLofyH5Q9EoXg50",
     "icon": {
-      "icon": "/favicon-96-96.png",
-      "appleTouchIcon": "/apple-touch-icon.png"
+      "icon": "./favicon-96-96.png",
+      "appleTouchIcon": "./apple-touch-icon.png"
     }
   }
 }
