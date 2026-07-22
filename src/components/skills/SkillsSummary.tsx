@@ -28,9 +28,9 @@ const SummaryStat: React.FC<SummaryStatProps> = ({ number, label, icon }) => {
 const SkillsSummary: React.FC = () => {
   const summaryStats = [
     { number: "4+", label: "Languages", icon: Code2 },
-    { number: "7+", label: "AI Technologies", icon: Brain },
+    { number: "10+", label: "AI Technologies", icon: Brain },
     { number: "5+", label: "ML & Data Science", icon: Database },
-    { number: "6+", label: "Backend & Cloud", icon: Server }
+    { number: "7+", label: "Backend & Cloud", icon: Server }
   ];
 
   return (

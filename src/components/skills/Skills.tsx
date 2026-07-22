@@ -1,4 +1,5 @@
-// Server Component - No 'use client' directive for SEO benefits
+'use client';
+
 import React from 'react';
 import { Code2, Brain, Server, Database, Cloud, type LucideIcon } from 'lucide-react';
 import SkillCategory from './SkillCategory';
@@ -62,7 +63,7 @@ const Skills: React.FC = () => {
         </div>
 
         <CollapsibleContent sectionId="skills">
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 items-stretch">
             {skillCategories.map((category, categoryIndex) => (
               <SkillCategory
                 key={categoryIndex}

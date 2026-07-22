@@ -41,11 +41,6 @@ const Projects: React.FC = () => {
       return priorityA - priorityB;
     });
 
-  // Dynamically generate categories from all project categories
-  const allCategories = projects.flatMap(project => project.categories);
-  const uniqueCategories = Array.from(new Set(allCategories)).sort((a, b) => a.localeCompare(b));
-  const categories = ['All', ...uniqueCategories];
-
   // Calculate counts per project category
   const categoryCounts: Record<string, number> = {
     All: projects.length,
@@ -55,6 +50,15 @@ const Projects: React.FC = () => {
       categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
     });
   });
+
+  // Dynamically generate categories sorted by relevance (most projects to least)
+  const allCategories = projects.flatMap(project => project.categories);
+  const uniqueCategories = Array.from(new Set(allCategories)).sort((a, b) => {
+    const countDiff = (categoryCounts[b] || 0) - (categoryCounts[a] || 0);
+    if (countDiff !== 0) return countDiff;
+    return a.localeCompare(b);
+  });
+  const categories = ['All', ...uniqueCategories];
 
   return (
     <section id="projects" className="py-20 bg-muted/30">

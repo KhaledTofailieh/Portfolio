@@ -8,19 +8,19 @@
     "email": "khaled.tofailieh@gmail.com",
     "phone": "+963967478585",
     "tagline": "Senior AI & Backend Engineer",
-    "bio": "I am a Senior AI & Backend Engineer dedicated to building intelligent, production-ready systems. By combining Clean Architecture & DDD with state-of-the-art AI orchestration—such as stateful multi-agent systems and hybrid retrieval (RAG) pipelines—I turn complex ideas into robust, scalable software services.",
+    "bio": "I am a Senior AI & Backend Engineer dedicated to building intelligent, production-ready systems. By combining Clean Architecture & DDD with state-of-the-art AI orchestration—such as stateful multi-agent systems, continuous reinforcement learning graphs, and multi-channel auto-reply (RAG) pipelines—I turn complex ideas into robust, scalable software services.",
     "closingBio": "Ready to build the future of intelligent systems? I am always excited to collaborate on cutting-edge AI architectures, scale high-performance backends, or exchange ideas on the latest engineering patterns. Let's connect and build something extraordinary.",
     "story": [
-      "I work at the intersection of **AI Engineering** and **Backend Architecture**, creating systems that are both *smart* and *scalable*. My background started with data engineering and machine learning models, which naturally led me to building **production-grade AI systems**. Over the years, I have designed and deployed complete platforms from scratch—like **Subul's Talent Engine**—taking them from initial ideas to actual production serving thousands of active users.",
-      "For me, AI is not just about using APIs. It is about building **smart, autonomous workflows** and search systems that solve real-world problems. Whether creating **hybrid semantic search engines** with *Qdrant* and *Reciprocal Rank Fusion (RRF)*, or orchestrating **multi-agent systems** with *LangGraph*, I focus on writing **clean code** and using **Domain-Driven Design (DDD)**. I enjoy finding and fixing technical bottlenecks to make sure systems are reliable and fast.",
-      "Continuous learning and sharing knowledge are very important to me. When I am not working on my **MSc in Artificial Intelligence** or writing articles on *Medium*, I teach and **mentor other developers** in programs like the **'AI Innovator Pathway'**. I love experimenting with new technologies and pushing the boundaries of what intelligent software can do."
+      "I work at the intersection of AI Engineering and Backend Architecture, creating systems that are both smart and scalable. My background started with data engineering and machine learning models, which naturally led me to building production-grade AI systems. Over the years, I have designed and deployed complete platforms and enterprise AI engines—such as Subul's Talent Engine and AI-Skilled's Sales Enablement Platform—taking them from initial architecture to active production.",
+      "For me, AI is not just about calling APIs. It is about building smart autonomous workflows, closed-loop continuous learning graphs, and intent-aware auto-reply engines that solve real-world business problems. Whether engineering framework selection graphs with Multi-Armed Bandit (MAB) algorithms, building multi-channel RAG systems, or orchestrating multi-agent pipelines with LangGraph, I focus on writing clean code and using Domain-Driven Design (DDD).",
+      "Continuous learning and sharing knowledge are central to my career. Alongside working on my MSc in Artificial Intelligence and authoring articles on Medium, I teach and mentor developers through programs like the 'AI Innovator Pathway'. I love experimenting with cutting-edge AI architectures and pushing the boundaries of what intelligent software can achieve."
     ],
     "profileImage": "./khaled_tofailieh.jpg"
   },
   "stats": {
-    "projects": "7+",
+    "projects": "10+",
     "yearsExperience": "4+",
-    "technologiesMastered": "25+"
+    "technologiesMastered": "30+"
   },
   "social": {
     "linkedin": {
@@ -141,6 +141,27 @@
         "context": "Enterprise AI solutions",
         "category": "AI Technologies",
         "icon": "https://google.github.io/adk-docs/assets/agent-development-kit.png"
+      },
+      {
+        "name": "Multi-Armed Bandit (MAB)",
+        "experience": "1+ year",
+        "context": "Reinforcement Learning & Closed-Loop Graphs",
+        "category": "AI Technologies",
+        "icon": "https://cdn.jsdelivr.net/npm/lucide-static@0.378.0/icons/trending-up.svg"
+      },
+      {
+        "name": "Multi-Step RAG & Auto-Reply",
+        "experience": "2+ years",
+        "context": "Intent-Aware Multi-Channel Auto-Reply",
+        "category": "AI Technologies",
+        "icon": "https://cdn.jsdelivr.net/npm/lucide-static@0.378.0/icons/message-square.svg"
+      },
+      {
+        "name": "Preference & Persona Engines",
+        "experience": "1+ year",
+        "context": "Personalized Content & Tone Learning",
+        "category": "AI Technologies",
+        "icon": "https://cdn.jsdelivr.net/npm/lucide-static@0.378.0/icons/user-check.svg"
       }
     ],
     "backend": [
@@ -277,6 +298,35 @@
     },
     {
       "id": 2,
+      "title": "AI Engineer (Part-Time)",
+      "company": "AI-Skilled",
+      "location": "Saudi Arabia (Remote)",
+      "logo": "./professional-experience-logos/skilled-logo.svg",
+      "duration": "Apr 2025 – Present",
+      "description": "Architected and built core AI sub-systems for an enterprise AI sales enablement platform, driving multi-channel SDR campaign generation, automated lead follow-ups, continuous learning graphs, and personalized auto-reply engines.",
+      "achievements": [
+        "Spearheaded the development of core AI services for an AI-powered sales platform, empowering SDRs to automate multi-channel campaign creation, lead outreach, and multi-turn lead interactions",
+        "Architected an autonomous framework selection system (IFSA) using Multi-Armed Bandit (MAB) optimization, boosting lead reply rates by 30% while reducing email generation costs from O(N) calls to O(2k-3k) API calls per 500 leads (where k represents the number of optimization rounds per batch)",
+        "Engineered a Multi-Step RAG Engine with multi-channel adaptive reply routing (WhatsApp, LinkedIn, Email), achieving high recall and precision over a centralized Knowledge Base",
+        "Built an interactive multi-agent campaign creator ('Chat with ALI') using LangGraph, utilizing specialized sub-agents for intent extraction, domain mapping, and dynamic USP/pain-point recommendation",
+        "Developed a central Preference Engine that learns from user modifications to enforce consistent persona, domain context, and authentic writing style across direct auto-replies and social engagements"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "LangChain",
+        "LangSmith",
+        "Multi-Agent Systems (MAS)",
+        "RAG & Multi-Step RAG",
+        "Reinforcement Learning (MAB)",
+        "Preference Engine",
+        "Conversational AI",
+        "Domain-Driven Design (DDD)"
+      ]
+    },
+    {
+      "id": 3,
       "title": "Machine Learning Engineer",
       "company": "Accumed",
       "location": "UAE (Remote)",
@@ -304,7 +354,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Data Engineer",
       "company": "EcoMundo",
       "location": "France (Remote)",
@@ -345,6 +395,109 @@
   ],
   "projects": [
     {
+      "id": 7,
+      "title": "Agentic Sales Campaign Assistant",
+      "subtitle": "Multi-Agent Strategy & Information Gathering Engine",
+      "company": "AI-Skilled",
+      "year": 2025,
+      "description": "A multi-agent conversational system ('Chat with ALI') that interacts with SDRs to extract intent, process campaign parameters, and recommend optimal USPs, pain points, and email subjects.",
+      "longDescription": "Built an intelligent multi-agent conversational discovery pipeline for sales campaign generation during employment at AI-Skilled. The system engages SDRs in interactive Q&A to gather business goals, using specialized sub-agents for parameter extraction, domain mapping, and text rewording. It dynamically recommends core campaign elements including USPs, audience pain points, and high-converting email subjects while maintaining persistent session history.",
+      "technologies": [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "Multi-Agent Systems",
+        "FastAPI",
+        "Prompt Engineering",
+        "NLP",
+        "Sales AI"
+      ],
+      "featured": true,
+      "categories": [
+        "AI/ML",
+        "Multi-Agent Systems",
+        "Sales AI"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+      ],
+      "status": "Production Deployed (2025)",
+      "priority": 1,
+      "project_type": "Software",
+      "code_shareable": false,
+      "live_url": "https://app.aiskilled.co/",
+      "role": "Lead AI Engineer"
+    },
+    {
+      "id": 8,
+      "title": "Intelligent Campaign Optimization Engine (IFSA)",
+      "subtitle": "Closed-Loop Reinforcement Learning Email Generation Graph",
+      "company": "AI-Skilled",
+      "year": 2025,
+      "description": "An autonomous campaign optimization system utilizing Multi-Armed Bandit (MAB) algorithms to adaptively allocate high-converting email frameworks, boosting reply rates by 30% while significantly reducing generation costs.",
+      "longDescription": "Engineered a continuous learning graph system for multi-lingual sales email generation. By implementing Multi-Armed Bandit (MAB) allocation strategies, the system continuously analyzes lead responses to promote top-performing email frameworks and deprioritize inefficient ones. This closed-loop optimization boosted lead reply rates by 30% while reducing LLM generation costs from O(N) calls to O(2k-3k) API calls per 500-lead round (where k represents the number of optimization rounds per batch).",
+      "technologies": [
+        "Python",
+        "LangGraph",
+        "Reinforcement Learning (MAB)",
+        "FastAPI",
+        "Closed-Loop Graphs",
+        "LLMs",
+        "Cost Optimization"
+      ],
+      "featured": true,
+      "categories": [
+        "AI/ML",
+        "Reinforcement Learning",
+        "Backend"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
+      ],
+      "status": "Production Deployed (2025)",
+      "priority": 2,
+      "project_type": "Software",
+      "code_shareable": false,
+      "live_url": "https://app.aiskilled.co/",
+      "role": "Lead AI Architect"
+    },
+    {
+      "id": 9,
+      "title": "Multi-Channel Auto-Reply & Persona Engine",
+      "subtitle": "Intent-Aware Auto-Reply & User Preference Learning System",
+      "company": "AI-Skilled",
+      "year": 2026,
+      "description": "An enterprise auto-reply generation suite featuring Multi-Step RAG and a global Preference Engine that learns from user modifications to deliver personalized multi-channel responses and authentic social comments.",
+      "longDescription": "Architected an intent-aware auto-reply and personalization system operating across Email, LinkedIn, and WhatsApp. Integrated a Multi-Step RAG pipeline that decomposes and refines incoming lead questions to retrieve high-precision answers from a shared Knowledge Base. Coupled this with a centralized, user-editable Preference Engine that continuously learns from manual edits to mimic individual user writing style, domain knowledge, and tone across both direct auto-replies and authentic LinkedIn post comments.",
+      "technologies": [
+        "Python",
+        "Multi-Step RAG",
+        "Auto-Reply Engine",
+        "Preference Engine",
+        "FastAPI",
+        "LangChain",
+        "LangSmith",
+        "Conversational AI",
+        "Multi-Channel Messaging"
+      ],
+      "featured": true,
+      "categories": [
+        "AI/ML",
+        "RAG Systems",
+        "Backend",
+        "Sales AI"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
+      ],
+      "status": "Production Deployed (2026)",
+      "priority": 3,
+      "project_type": "Software",
+      "code_shareable": false,
+      "live_url": "https://app.aiskilled.co/",
+      "role": "Lead AI & Backend Engineer"
+    },
+    {
       "id": 1,
       "title": "Talent Engine: Autonomous Profiling & Career Ecosystem",
       "subtitle": "Advanced AI Profiling, Matching & Application System",
@@ -374,8 +527,7 @@
         "AI/ML",
         "Backend",
         "Multi-Agent Systems",
-        "Generative AI",
-        "NLP"
+        "Generative AI"
       ],
       "images": [
         "./projects-images/Subul.png",
@@ -412,8 +564,7 @@
       "featured": true,
       "categories": [
         "Backend",
-        "Automation",
-        "System Architecture"
+        "Automation & RPA"
       ],
       "images": [
         "./projects-images/SubulLP.png",
@@ -451,8 +602,7 @@
       "categories": [
         "AI/ML",
         "Backend",
-        "Search Engines",
-        "NLP"
+        "RAG Systems"
       ],
       "images": [
         "./projects-images/Talent-Search-Engine.png",
@@ -484,9 +634,9 @@
       ],
       "featured": false,
       "categories": [
-        "Healthcare",
         "AI/ML",
-        "Natural Language Processing"
+        "Generative AI",
+        "Healthcare AI"
       ],
       "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop",
       "images": [
@@ -519,11 +669,9 @@
       ],
       "featured": false,
       "categories": [
-        "Healthcare",
         "Backend",
-        "Automation",
-        "RPA",
-        "Data Streaming"
+        "Automation & RPA",
+        "Healthcare AI"
       ],
       "images": [
         "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
@@ -555,8 +703,8 @@
       "featured": true,
       "categories": [
         "AI/ML",
-        "Education",
-        "Multi-Agent Systems"
+        "Multi-Agent Systems",
+        "Generative AI"
       ],
       "image": "./projects-images/AI-Innovator-Pathway.png",
       "images": [

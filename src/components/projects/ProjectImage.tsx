@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Github, Sparkles, ChevronLeft, ChevronRight, Lock, ExternalLink, FolderOpen, Briefcase } from 'lucide-react';
+import { Github, Sparkles, ChevronLeft, ChevronRight, Lock, ExternalLink, FolderOpen, Briefcase, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
@@ -19,6 +19,7 @@ interface ProjectImageProps {
     asset?: string;
     asset_type?: string;
     role?: string;
+    company?: string;
     project_type?: string;
   };
 }
@@ -103,22 +104,25 @@ const ProjectImage: React.FC<ProjectImageProps> = ({ project }) => {
 
   return (
     <div className="relative overflow-hidden group">
-      {/* Featured Badge */}
-      {project.featured && (
+      {/* Company Badge on Top Left */}
+      {project.company && (
         <div className="absolute top-3 left-3 z-30">
-          <Badge variant="default" className="shadow-md text-xs font-semibold px-2.5 py-1 flex items-center gap-1 backdrop-blur-md">
-            <Sparkles className="w-3 h-3 fill-current" />
-            Featured
+          <Badge
+            variant="outline"
+            className="shadow-md text-xs font-semibold px-2.5 py-1 flex items-center gap-1.5 bg-black/50 border-white/15 text-white backdrop-blur-md"
+          >
+            <Building2 className="w-3.5 h-3.5 text-sky-400" />
+            {project.company}
           </Badge>
         </div>
       )}
 
-      {/* Role Badge */}
+      {/* Top Right Overlay: Role */}
       {project.role && (
         <div className="absolute top-3 right-3 z-30">
           <Badge
             variant="outline"
-            className="shadow-md text-xs font-semibold px-2.5 py-1 flex items-center gap-1.5 bg-black/40 border-white/10 text-white backdrop-blur-md"
+            className="shadow-md text-xs font-semibold px-2.5 py-1 flex items-center gap-1.5 bg-black/50 border-white/15 text-white backdrop-blur-md"
           >
             <Briefcase className="w-3 h-3 text-emerald-400" />
             {project.role}

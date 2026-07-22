@@ -9,7 +9,8 @@ import {
   BookOpen, 
   Play, 
   Globe, 
-  ExternalLink 
+  ExternalLink,
+  Sparkles
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -157,12 +158,12 @@ const ProjectContent: React.FC<ProjectContentProps> = ({ project }) => {
           )}
         </div>
 
-        {/* Right Column: Company & Project Type */}
+        {/* Right Column: Featured & Project Type */}
         <div className="flex flex-col gap-1.5 items-end">
-          {project.company && (
-            <Badge variant="outline" className="text-xs bg-primary/10 text-primary border-primary/20 flex items-center font-medium">
-              <Building2 className="w-3 h-3 mr-1 inline" />
-              {project.company}
+          {project.featured && (
+            <Badge variant="default" className="text-xs font-semibold px-2.5 py-0.5 shadow-sm bg-gradient-to-r from-amber-500/90 via-amber-400/90 to-yellow-500/90 text-slate-950 flex items-center border border-amber-300/40">
+              <Sparkles className="w-3 h-3 mr-1 fill-slate-950 text-slate-950 animate-pulse" />
+              Featured
             </Badge>
           )}
           {project.project_type && (
@@ -181,43 +182,32 @@ const ProjectContent: React.FC<ProjectContentProps> = ({ project }) => {
         {project.subtitle}
       </p>
 
+      {/* Description Section with New Update */}
       <div className="text-muted-foreground text-sm leading-relaxed mb-4 min-h-[90px]">
-        <ul className="space-y-2">
-          {(showLongDesc && project.longDescription
-            ? project.longDescription
-            : project.description.length > 130
-              ? project.description.slice(0, project.description.lastIndexOf(' ', 130)) + '…'
-              : project.description)
-            .split('.')
-            .filter(sentence => sentence.trim().length > 0)
-            .map((sentence, idx) => (
-              <li key={idx} className="flex items-start">
-                <span className="text-primary mr-2 mt-1 text-[0.6rem]">●</span>
-                <span>{sentence.trim()}{sentence.trim().endsWith('…') ? '' : '.'}</span>
-              </li>
-            ))}
-        </ul>
+        <p className={showLongDesc ? '' : 'line-clamp-3'}>
+          {showLongDesc && project.longDescription ? project.longDescription : project.description}
+        </p>
         {project.longDescription && (
           <button
             onClick={() => setShowLongDesc(!showLongDesc)}
-            className="mt-2 text-primary hover:underline font-medium focus:outline-none inline-block text-xs"
+            className="mt-2 text-primary hover:underline font-medium focus:outline-none inline-flex items-center gap-1 text-xs"
           >
-            {showLongDesc ? 'Show less' : 'Show more'}
+            {showLongDesc ? 'Show summary' : 'Read full details →'}
           </button>
         )}
       </div>
 
-      {/* Technologies */}
+      {/* Technologies Section with New Update */}
       <div className="flex flex-wrap gap-2 mb-4 pt-4 border-t border-border/50">
         {(showAllTech ? project.technologies : project.technologies.slice(0, visibleTechCount)).map((tech, techIndex) => (
-          <Badge key={techIndex} variant="outline" className="text-xs bg-primary/10">
+          <Badge key={techIndex} variant="outline" className="text-xs bg-primary/10 border-primary/20 text-foreground">
             {tech}
           </Badge>
         ))}
         {!showAllTech && project.technologies.length > visibleTechCount && (
           <Badge
-            variant="default"
-            className="text-xs cursor-pointer hover:bg-primary/90 transition-colors shadow-sm"
+            variant="secondary"
+            className="text-xs cursor-pointer hover:bg-primary/20 text-primary font-medium transition-colors shadow-sm"
             onClick={() => setShowAllTech(true)}
           >
             +{project.technologies.length - visibleTechCount} more
@@ -225,8 +215,8 @@ const ProjectContent: React.FC<ProjectContentProps> = ({ project }) => {
         )}
         {showAllTech && project.technologies.length > visibleTechCount && (
           <Badge
-            variant="default"
-            className="text-xs cursor-pointer hover:bg-primary/90 transition-colors shadow-sm"
+            variant="secondary"
+            className="text-xs cursor-pointer hover:bg-primary/20 text-primary font-medium transition-colors shadow-sm"
             onClick={() => setShowAllTech(false)}
           >
             Show less
